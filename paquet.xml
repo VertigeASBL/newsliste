@@ -1,0 +1,24 @@
+<paquet
+	prefix="newsliste"
+	categorie="communication"
+	version="1.0.0"
+	etat="test"
+	compatibilite="[3.0.16;3.0.*]"
+	logo="prive/themes/spip/images/newsliste-32.png"
+	documentation=""
+>
+	<!--
+		Paquet genere le 2014-04-07 16:27:34
+	-->
+
+	<nom>Liste en case</nom>
+
+	<auteur lien='http://www.vertige.org'>Vertige (Didier)</auteur>
+
+	<licence>GNU/GPL</licence>
+
+	<necessite nom="mailshot" compatibilite="[1.6.3;[" />
+	<necessite nom="mailsubscribers" compatibilite="[1.4.2;]" />
+	<necessite nom="newsletters" compatibilite="[1.3.2;]" />
+
+</paquet>

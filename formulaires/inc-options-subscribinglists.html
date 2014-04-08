@@ -1,0 +1,28 @@
+#SET{name,#ENV{name}}#SET{defaut,''}
+<B_listes>
+<ul class="spip">
+<BOUCLE_listes(POUR){tableau #ENV{choix_listes}}>
+	#SET{val,#CLE}
+	[(#ENV{status,''}|non
+	  |ou{#ENV{status,''}|=={#VALEUR{status}}}
+	  |ou{#GET{val}|in_any{#ENV{#GET{name},#GET{defaut}}}})
+    [
+      <li class="choix">
+        <input id="#GET{val}" name="liste\[\]" type="checkbox" value="#GET{val}"[(#GET{val}|=={#ENV{#GET{name},#GET{defaut}}}|oui)selected="selected"] />
+
+        <label for="#GET{val}">
+          [(#VALEUR{titre})]
+
+          \((#GET{val}
+            |mailshot_list_subscribers
+            |singulier_ou_pluriel{
+                                  mailshot:info_1_mailsubscriber,
+                                  mailshot:info_nb_mailsubscribers})\)
+        </label>
+      </li>
+    ]
+
+  ]
+</BOUCLE_listes>
+</ul>
+</B_listes>
