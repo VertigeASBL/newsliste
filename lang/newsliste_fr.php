@@ -6,7 +6,7 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// N
-	'newsliste_titre' => 'Liste en case',
+	'newsliste_titre' => 'Listes en case',
 );
 
 ?>

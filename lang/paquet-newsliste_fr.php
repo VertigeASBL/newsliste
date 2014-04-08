@@ -7,7 +7,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// N
 	'newsliste_description' => '',
-	'newsliste_nom' => 'Liste en case',
+	'newsliste_nom' => 'Listes en case',
 	'newsliste_slogan' => 'Envoyer une newslettres à plusieurs listes en même temps.',
 );
 
